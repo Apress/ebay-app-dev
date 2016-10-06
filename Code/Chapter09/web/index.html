@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>eBay Search</title>
+</head>
+<body>
+<h1><img src="logo.pl">eBay Search</h1>
+<p>
+This page uses the eBay API with Perl to search
+the eBay service for items currently up for auction
+with key words you specify in the item's title 
+or description.
+</p>
+<p>
+<form action="getsearchresult.pl">
+<table>
+  <tr>
+    <td>
+      Your eBay User Id: 
+    </td>
+    <td>
+      <input type="TEXT" name="userid">
+    </td>
+  </tr>
+  <tr>
+	<td>
+      Your eBay Password:
+    </td>
+    <td>
+	  <input type="PASSWORD" name="password">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Find items with the following words in their 
+      title or description.
+    </td>
+    <td>
+      <textarea name="querydata">shoes</textarea>
+    </td>
+  </tr>
+</table>
+
+<input type="submit">
+</form>
+</p>
+
+<hr/>
+<p>
+This web page is part of the book 
+<i>Developing Applications with eBay</i>
+written by Ray Rischpater and available 
+from <a href="http://www.apress.com">Apress, L.P.</a>
+</p>
+</body>
+</html>
